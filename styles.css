@@ -1,0 +1,90 @@
+body {
+    font-family: Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.intro {
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.big-header {
+    font-size: 48px;
+    font-weight: bold;
+    color: #444;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: #333;
+}
+
+.projects {
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.projects h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.projects li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.projects img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.projects div {
+    flex-grow: 1;
+}
+
+.projects strong {
+    display: block;
+    font-size: 18px;
+    color: #444;
+}
+
+.projects p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.projects span {
+    font-size: 16px;
+    color: #999;
+}
