@@ -6,20 +6,6 @@ body {
     background-color: #f0f0f0;
 }
 
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.profile-photo {
-    width: 100px; /* Adjust size as needed */
-    height: 100px; /* Adjust size as needed */
-    border-radius: 50%;
-    object-fit: cover;
-    margin-left: 20px; /* Adjust spacing as needed */
-}
-
 .intro {
     padding: 40px;
     background-color: white;
@@ -167,4 +153,19 @@ body {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-photo {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 20px; /* Adjust spacing as needed */
 }
