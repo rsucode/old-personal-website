@@ -25,6 +25,11 @@
                 <div>
                     <strong>project1</strong>
                     <p>testtest</p>
+                    <div class="image-gallery">
+                        <img src="project1-img1.jpg" alt="Project 1 Image 1" class="gallery-image">
+                        <img src="project1-img2.jpg" alt="Project 1 Image 2" class="gallery-image">
+                        <img src="project1-img3.jpg" alt="Project 1 Image 3" class="gallery-image">
+                    </div>
                 </div>
                 <span>thing</span>
             </li>
@@ -33,6 +38,10 @@
                 <div>
                     <strong>project2</strong>
                     <p>hi</p>
+                    <div class="image-gallery">
+                        <img src="project2-img1.jpg" alt="Project 2 Image 1" class="gallery-image">
+                        <img src="project2-img2.jpg" alt="Project 2 Image 2" class="gallery-image">
+                    </div>
                 </div>
                 <span>testowsdfg</span>
             </li>
@@ -42,6 +51,10 @@
                     <p class="social-links">
                         <a href="https://hci.stanford.edu/">Library of Values</a> </p>
                     <p>Chrome browser extension featuring accessible user interface and real-time server support for LLM classifiers. Created as a research project under the Stanford Human-Computer Interaction lab.</p>
+                    <div class="image-gallery">
+                        <img src="project3-img1.jpg" alt="Project 3 Image 1" class="gallery-image">
+                        <img src="project3-img2.jpg" alt="Project 3 Image 2" class="gallery-image">
+                    </div>
                 </div>
                 <span>fullstack</span>
             </li>
@@ -51,10 +64,22 @@
                     <p class="social-links">
                         <a href="https://innovationlabs.harvard.edu/articles/2021-2022-spark-grants">Inlet</a></p>
                     <p>Multimedia moodboards for drag-and-drop art, video, music, and text.</p>
+                    <div class="image-gallery">
+                        <img src="project4-img1.jpg" alt="Project 4 Image 1" class="gallery-image">
+                        <img src="project4-img2.jpg" alt="Project 4 Image 2" class="gallery-image">
+                    </div>
                 </div>
                 <span>web app</span>
             </li>
         </ul>
     </section>
+
+    <!-- Modal for enlarged images -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
