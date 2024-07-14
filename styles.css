@@ -1,15 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.intro {
+    padding: 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
 }
 
 .profile-photo {
-    width: 100px; /* Adjust size as needed */
-    height: 100px; /* Adjust size as needed */
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    margin-left: 20px; /* Adjust spacing as needed */
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0073b1;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.projects {
+    padding: 20px;
+}
+
+.projects h2 {
+    text-align: center;
 }
 
 .projects ul {
@@ -21,6 +52,8 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
 }
 
 .projects img {
@@ -42,7 +75,7 @@
 }
 
 .modal {
-    display: none; /* Hidden by default */
+    display: none; 
     position: fixed;
     z-index: 1;
     padding-top: 100px;
