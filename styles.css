@@ -1,50 +1,73 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-}
-
-.intro {
-    padding: 20px;
-    background: #f4f4f4;
-    text-align: center;
+    background-color: #f0f0f0;
 }
 
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
 }
 
 .profile-photo {
-    width: 100px;
-    height: 100px;
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
     border-radius: 50%;
     object-fit: cover;
+    margin-left: 20px; /* Adjust spacing as needed */
+}
+
+.intro {
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.big-header {
+    font-size: 48px;
+    font-weight: bold;
+    color: #444;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.social-links {
+    margin-top: 20px;
 }
 
 .social-links a {
-    margin: 0 10px;
+    margin-right: 15px;
     text-decoration: none;
-    color: #0073b1;
+    color: #666;
+    font-weight: bold;
 }
 
 .social-links a:hover {
-    text-decoration: underline;
+    color: #333;
 }
 
 .projects {
-    padding: 20px;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .projects h2 {
-    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #444;
 }
 
 .projects ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
@@ -52,8 +75,6 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
 }
 
 .projects img {
@@ -62,30 +83,55 @@ body {
     margin-right: 20px;
 }
 
+.projects div {
+    flex-grow: 1;
+}
+
+.projects strong {
+    display: block;
+    font-size: 18px;
+    color: #444;
+}
+
+.projects p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.projects span {
+    font-size: 16px;
+    color: #999;
+}
+
 .image-gallery {
     display: flex;
     gap: 10px;
 }
 
-.gallery-image {
+.image-gallery img {
     width: 100px;
     height: 100px;
     object-fit: cover;
-    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1);
 }
 
 .modal {
-    display: none; 
+    display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 100px;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .modal-content {
@@ -93,6 +139,16 @@ body {
     display: block;
     width: 80%;
     max-width: 700px;
+}
+
+.modal-content {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
 }
 
 .close {
@@ -103,6 +159,7 @@ body {
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .close:hover,
